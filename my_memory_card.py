@@ -3,7 +3,6 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QButtonGroup, QApplication, QWidget, QLabel, QPushButton, QVBoxLayout, QHBoxLayout, QRadioButton, QGroupBox
 from random import shuffle, randint
 from math import floor
-import colorama
 
 class Question():
     def __init__(self, question_text, right_answer, wrong1, wrong2, wrong3):
@@ -127,6 +126,7 @@ questions_list.append(Question('С какой из этих стран Росс�
 questions_list.append(Question('Площадь Люксембурга', '2 586 км²', '4 574 км²', '8 335 км²', '2 587 км²'))
 questions_list.append(Question('Столица Люксембурга', 'Люксембург', 'Андорра', 'Афины', 'Нью-Йорк'))
 questions_list.append(Question('Столица Беларуси', 'Минск', 'Гомель', 'Пинск', 'Рига'))
+questions_list.append(Question('Столица Китая', 'Пекин', 'Шанхай', 'Токио', 'Сеул'))
 
 
 ans_button.clicked.connect(click_ok)
